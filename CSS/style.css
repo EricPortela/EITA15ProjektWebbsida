@@ -1,29 +1,70 @@
 .NavigationBar {
+    display: flex;
+    background-color: #2C2C2E;
+    height: 100px;
+    
     box-sizing: border-box;
     border-width: 10px;
-    border-color: #2C2C2E;
     border-style: solid;
-    background-color: #686880;
-    width: 100%;
+    border-color: red;
+   
 }
 
 .logo {
-    
+    float: left;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    border-width: 10px;
+    border-style: solid;
+    border-color: blue;
+    width: 50%;
 }
 
-
-.Titel{
+#Titel{
     color: white;
+    /* font-style: ; */
+}
+
+#menu{
+    width: auto;
+    max-height: 30px;
+}
+
+.HamburgerMenu{
+    float: right;
+    width: 50%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    border-width: 10px;
+    border-style: solid;
+    border-color: blue;
+}
+.Mitten{
+    border-width: 10px;
+    border-style: solid;
+    border-color: blue;
+}
+.CenterRubrik{
+    border-width: 10px;
+    border-style: solid;
+    border-color: red;
+}
+#ProjektArbete{
+    border-width: 10px;
+    border-style: solid;
+    border-color: rgb(102, 255, 0);
+}
+#grupp{
+    border-width: 10px;
+    border-style: solid;
+    border-color: blue;
 }
 
 ul {
     list-style-type: none; /*Removes all styling for the unordred list, including the bullet points */
 }
-
-
-
-
-
 
 
 /* ################################################################# */
