@@ -11,10 +11,3 @@ Webbsida för projektarbete i kursen Digitala System (EITA15). Pågående kurs. 
      <h3> - Meny </h3>
      <img src="https://user-images.githubusercontent.com/58792679/163952388-3ba02c38-80bf-4628-9382-3d8d91085336.png" width="800">
 </p>
-
-# Färgkodning och attibut
-
-Bakgrundsfärg: #2C2C2E
-
-Textfärg: #6D9DC5
-

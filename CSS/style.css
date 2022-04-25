@@ -7,9 +7,19 @@
     border-color: blue;
     border-style: solid;
     width: 100%;
+    background-color: black;
 }
 
 .logo {
+
     border-width: 100px;
     border-color:  red;
 }
+
+
+.menu {
+
+    list-style: none; /*Removes all styling of the unordered list, inluding bullet points*/
+
+}
+
