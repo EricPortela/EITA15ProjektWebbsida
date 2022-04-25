@@ -2,19 +2,14 @@
 
 
 .NavigationBar {
+    box-sizing: border-box;
     border-width: 10px;
     border-color: blue;
     border-style: solid;
-    width: 90%;
+    width: 100%;
 }
-
 
 .logo {
     border-width: 100px;
     border-color:  red;
-}
-
-
-h1 {
-    color: red;
 }
