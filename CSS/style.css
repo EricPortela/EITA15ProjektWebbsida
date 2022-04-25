@@ -6,7 +6,7 @@
     border-width: 10px;
     border-color: #2C2C2E;
     border-style: solid;
-    background-color: #2C2C2E;
+    background-color: #dcdcf7;
     width: 100%;
 }
 
@@ -21,6 +21,17 @@
 
 ul {
     list-style-type: none; /*Removes all styling for the unordred list, including the bullet points */
+}
+
+.menu_buttons {
+    display: flex;
+    justify-content: center;
+
+    box-sizing: border-box;
+    
+    border-width: 10px;
+    border-style: solid;
+    border-color: red;
 }
 
 li {
