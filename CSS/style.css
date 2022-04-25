@@ -1,12 +1,9 @@
-
-
-
 .NavigationBar {
     box-sizing: border-box;
     border-width: 10px;
     border-color: #2C2C2E;
     border-style: solid;
-    background-color: #dcdcf7;
+    background-color: #686880;
     width: 100%;
 }
 
@@ -23,15 +20,30 @@ ul {
     list-style-type: none; /*Removes all styling for the unordred list, including the bullet points */
 }
 
+
+
+
+
+
+
+/* ################################################################# */
+/* #                                                               # */
+/* #                             MENU                              # */
+/* #                                                               # */
+/* ################################################################# */
+
+.main {
+    
+}
+
 .menu_buttons {
     display: flex;
     justify-content: center;
 
     box-sizing: border-box;
-    
+
     border-width: 10px;
     border-style: solid;
-    border-color: red;
 }
 
 li {
@@ -39,7 +51,42 @@ li {
     font-size: 30px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: medium;
+    margin-bottom: 100px;
+    margin-top: 100px;
 }
 
 
+.test {
+    display: flex;
 
+    border-width: 10px;
+    border-color: red;
+    border-style: solid;
+
+    height: 100px;
+}
+
+
+#leftBox {
+    display: flex;
+    width: 50%;
+    float: left;
+
+    justify-content: flex-start;
+
+    border-width: 10px;
+    border-color: yellow;
+    border-style: solid;
+}
+
+#rightBox {
+    display: flex;
+    width: 50%;
+    float: right;
+
+    justify-content: flex-end;
+
+    border-width: 10px;
+    border-color: blue;
+    border-style: solid;
+}
