@@ -4,22 +4,15 @@
 .NavigationBar {
     box-sizing: border-box;
     border-width: 10px;
-    border-color: blue;
+    border-color: #2C2C2E;
     border-style: solid;
+    background-color: #2C2C2E;
     width: 100%;
-    background-color: black;
 }
 
 .logo {
-
-    border-width: 100px;
-    border-color:  red;
+    
 }
-
-
-.menu {
-
-    list-style: none; /*Removes all styling of the unordered list, inluding bullet points*/
-
+.Titel{
+color: white;
 }
-
