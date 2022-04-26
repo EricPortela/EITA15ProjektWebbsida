@@ -29,10 +29,8 @@
     font-weight: 450;
 }
 
-#menu{
-    width: auto;
-    max-height: 30px;
-  
+.Titel {
+    color: white;
 }
 
 .HamburgerMenu{
@@ -110,67 +108,56 @@ ul {
 }
 
 
+
+
 /* ################################################################# */
 /* #                                                               # */
 /* #                             MENU                              # */
 /* #                                                               # */
 /* ################################################################# */
 
-.main {
-    
+/* Removes the "white border" around a flexbox and sets height to same size as the devices screen height*/
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: #2C2C2E;
 }
 
-.menu_buttons {
+.menu_list {
+    /* Center all list items (vertically) inisde the unordered list */
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 
-    box-sizing: border-box;
+    /* Removes indentation of ul*/
+    padding: 0;
 
-    border-width: 1px;
-    border-style: solid;
+    list-style-type: none;
 }
 
 li {
-    color: blue;
-    font-size: 30px;
+    color: #6D9DC5;
+    font-size: 25px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: medium;
-    margin-bottom: 100px;
-    margin-top: 100px;
+    margin-bottom: 50px;
+    margin-top: 50px;
 }
 
+.menu_item {
+    color: #6D9DC5; 
 
-.test {
-    display: flex;
-
-    border-width: 10px;
-    border-color: red;
-    border-style: solid;
-
-    height: 100px;
+    /* Transision on menu_item --> Will be seen at hover, since color will change to white */
+    transition: color 0.25s ease-in;
+    text-decoration: none;
 }
 
-
-#leftBox {
-    display: flex;
-    width: 50%;
-    float: left;
-
-    justify-content: flex-start;
-
-    border-width: 10px;
-    border-color: yellow;
-    border-style: solid;
+.menu_item:hover{
+    color: white;
 }
 
-#rightBox {
+.exit_button {
     display: flex;
-    width: 50%;
-    float: right;
-
-    justify-content: flex-end;
-
-    border-width: 10px;
-    border-color: blue;
-    border-style: solid;
+    flex-direction: row-reverse;
 }
