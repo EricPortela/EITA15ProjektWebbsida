@@ -4,10 +4,10 @@
     height: 100px;
     
     box-sizing: border-box;
-    border-width: 10px;
+    /* border-width: 10px;
     border-style: solid;
     border-color: red;
-   
+    */
 }
 
 .logo {
@@ -15,20 +15,24 @@
     display: flex;
     flex-flow: row wrap;
     justify-content: flex-start;
-    border-width: 10px;
+    /* border-width: 10px;
     border-style: solid;
-    border-color: blue;
+    border-color: blue; */
     width: 50%;
+
 }
 
 #Titel{
-    color: white;
-    /* font-style: ; */
+    color: white;    
+    font-family: helvetica Neue;
+    font-size: 30px;
+    font-weight: 450;
 }
 
 #menu{
     width: auto;
     max-height: 30px;
+  
 }
 
 .HamburgerMenu{
@@ -36,32 +40,71 @@
     width: 50%;
     display: flex;
     flex-flow: row wrap;
-    justify-content: flex-end;
-    border-width: 10px;
+    justify-content: flex-end;  
+    /* border-width: 10px;
     border-style: solid;
     border-color: blue;
+ */
 }
 .Mitten{
-    border-width: 10px;
+    position: relative;
+    /* border-width: 10px;
     border-style: solid;
-    border-color: blue;
+    border-color: blue; */
+    background-color: #2C2C2E;
 }
-.CenterRubrik{
-    border-width: 10px;
-    border-style: solid;
-    border-color: red;
-}
+/* .CenterRubrik{
+    font-style: Helvetica;
+} */
 #ProjektArbete{
-    border-width: 10px;
+    display: flex;
+    color: white;
+    justify-content: center;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    font-size: 80px;
+    /* border-width: 10px;
     border-style: solid;
-    border-color: rgb(102, 255, 0);
+    border-color: rgb(102, 255, 0); */
+    font-family: Helvetica Neue;
+    font-weight: 450;
 }
 #grupp{
-    border-width: 10px;
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgba(255, 255, 255, 0.796);
+    font-family: Helvetica Neue;
+    font-size: 30px;
+    font-weight: 400;
+    /* border-width: 10px;
     border-style: solid;
-    border-color: blue;
+    border-color: blue; */
 }
-
+#bakgrundsbild{
+max-width: 1400px;
+height: auto;
+}
+.Neder{
+    display: flex;
+    bottom: 20px;
+    background-color: #2C2C2E;
+    height: 400px;
+}
+#ner{
+    display: flex;
+    bottom: 20px;
+    width: 1400px;
+    /* border-width: 10px;
+    border-style: solid;
+    border-color: blue; */
+    background-color: #2C2C2E;
+}
 ul {
     list-style-type: none; /*Removes all styling for the unordred list, including the bullet points */
 }
