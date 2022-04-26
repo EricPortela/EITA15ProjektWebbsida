@@ -19,7 +19,12 @@
     border-style: solid;
     border-color: blue; */
     width: 50%;
+}
 
+#menu {
+    padding-top: 30px;
+    padding-right: 30px;
+    max-width: 40px;
 }
 
 #Titel{
@@ -85,8 +90,8 @@
     border-color: blue; */
 }
 #bakgrundsbild{
-max-width: 1400px;
-height: auto;
+    max-width: 100%;
+    height: auto;
 }
 .Neder{
     display: flex;
@@ -160,4 +165,10 @@ li {
 .exit_button {
     display: flex;
     flex-direction: row-reverse;
+}
+
+#exit_img {
+    padding-top: 30px;
+    padding-right: 30px;
+    max-width: 40px;
 }
