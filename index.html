@@ -10,7 +10,8 @@
 <body>
 
     <!-- Pop-over Menu -->
-    <div id="pop_over" class="pop_over_menu"> 
+    <div id="pop_over" class="pop_over_menu">
+
         <div class="exit_button">
             <img id=exit_img src="../Assets/exit_button.svg" onclick="closeMenu()">
         </div>
@@ -26,13 +27,13 @@
     </div>
 
 
-
     <!-- Main Page -->
     <div class="main_view">
 
         <div class="top_section">
 
             <a class="logo" href="index.html">
+                <img src="../Assets/AlkoholLogo.png">
                 <h1 id="Titel">
                     ALKOHOLMÄTARE
                 </h1>
@@ -67,14 +68,14 @@
 
 
 
-    <!-- Javascript for opening and closing of pop-up menu -->
+    <!-- Javascript for opening and closing of pop-up menu! -->
     <script>
         function openMenu() {
-            document.getElementById("pop_over").style.display = "block";
+            document.getElementById("pop_over").style.width = "100%";
         } 
 
         function closeMenu() {
-            document.getElementById("pop_over").style.display = "none";
+            document.getElementById("pop_over").style.width = "0%";
         } 
     </script>
 
