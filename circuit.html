@@ -29,24 +29,10 @@
     
         </div>
 
-        <div class="Mitten">
-            <img id="bakgrundsbild" src="../Assets/background_image.svg">
-            <div class="CenterRubrik">
-                 <h1 id="ProjektArbete">
-                    PROJEKTARBETE - EITA15
-                 </h1>
-                 <h3 id="grupp">
-                      GRUPP 5
-                </h3>
-             </div>
+
+        <div class="Middle">
+            <img id="kretsschema" src="../Assets/Kretsschema.png"  width="700" height="900">  
         </div>
-
-
-        <div class="Neder">
-        </div>
-
-    </div>
-
 
     <!-- Pop-over Menu -->
     <div id="pop_over" class="pop_over_menu">
@@ -64,17 +50,17 @@
         </ul>
 
     </div>
+     
+  <!-- Javascript for opening and closing of pop-up menu! -->
+  <script>
+    function openMenu() {
+        document.getElementById("pop_over").style.width = "100%";
+    } 
 
-    <!-- Javascript for opening and closing of pop-up menu! -->
-    <script>
-        function openMenu() {
-            document.getElementById("pop_over").style.width = "100%";
-        } 
-
-        function closeMenu() {
-            document.getElementById("pop_over").style.width = "0%";
-        } 
-    </script>
+    function closeMenu() {
+        document.getElementById("pop_over").style.width = "0%";
+    } 
+</script>
 
 </body>
 </html>
