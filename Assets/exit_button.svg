@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="104px" height="104px" viewBox="0 0 104 104" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="107px" height="107px" viewBox="0 0 107 107" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <title>exit_button</title>
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Artboard" transform="translate(-1756.000000, -60.000000)" fill="#D8D8D8" stroke="#979797">
-            <g id="exit_button" transform="translate(1807.618795, 111.618795) rotate(45.000000) translate(-1807.618795, -111.618795) translate(1771.118795, 75.118795)">
-                <rect id="Rectangle" x="36.2071068" y="0.5" width="2" height="72" rx="1"></rect>
-                <path d="M36.5,1.20710678 C36.7761424,1.20710678 37.0261424,1.31903559 37.2071068,1.5 C37.3880712,1.68096441 37.5,1.93096441 37.5,2.20710678 L37.5,2.20710678 L37.5,72.2071068 C37.5,72.4832492 37.3880712,72.7332492 37.2071068,72.9142136 C37.0261424,73.095178 36.7761424,73.2071068 36.5,73.2071068 C36.2238576,73.2071068 35.9738576,73.095178 35.7928932,72.9142136 C35.6119288,72.7332492 35.5,72.4832492 35.5,72.2071068 L35.5,72.2071068 L35.5,2.20710678 C35.5,1.93096441 35.6119288,1.68096441 35.7928932,1.5 C35.9738576,1.31903559 36.2238576,1.20710678 36.5,1.20710678 Z" id="Rectangle" transform="translate(36.500000, 37.207107) rotate(90.000000) translate(-36.500000, -37.207107) "></path>
-            </g>
+        <g id="exit_button" transform="translate(53.500000, 53.118644) rotate(45.000000) translate(-53.500000, -53.118644) translate(16.000000, 15.618644)" fill="#D8D8D8" stroke="#979797">
+            <rect id="Rectangle" x="0.5" y="35.8813559" width="74" height="3.23728814" rx="1.61864407"></rect>
+            <rect id="Rectangle" transform="translate(37.500000, 37.500000) rotate(90.000000) translate(-37.500000, -37.500000) " x="0.5" y="35.8813559" width="74" height="3.23728814" rx="1.61864407"></rect>
         </g>
     </g>
 </svg>
