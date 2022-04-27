@@ -1,13 +1,25 @@
 .top_section {
     display: flex;
-    background-color: #2C2C2E;
-    height: 100px;
-    
+    align-items: center;
     box-sizing: border-box;
-    /* border-width: 10px;
-    border-style: solid;
-    border-color: red;
-    */
+    height: 100px;
+    background-color: #2C2C2E;
+}
+
+.left_section {
+    display: flex;
+    align-items: center;
+
+    width: 50%;
+    float: left;
+}
+
+.right_section {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 50%;
+    float: right;
+    align-items: center;
 }
 
 #logo_image {
@@ -31,9 +43,8 @@
 }
 
 #menu {
-    padding-top: 30px;
-    padding-right: 30px;
-    max-height: 40px;
+    max-height: 20px;
+    padding: 20px;
 }
 
 #Titel{
@@ -46,17 +57,17 @@
 .Titel {
     color: white;
 }
-
+/* 
 .hamburger_menu{
     float: right;
     display: flex;
     flex-flow: row wrap;
     justify-content: flex-end;
-    /* border-width: 10px;
+    border-width: 10px;
     border-style: solid;
     border-color: blue;
- */
-}
+} */
+
 .Mitten{
     position: relative;
     /* border-width: 10px;
@@ -188,11 +199,12 @@ li {
 
 .exit_button {
     display: flex;
+    align-items: center;
     flex-direction: row-reverse;
+    height: 100px;
 }
 
 #exit_img {
-    padding-top: 30px;
-    padding-right: 30px;
-    max-height: 100px;
+    max-height: 40px;
+    padding: 10px;
 }
