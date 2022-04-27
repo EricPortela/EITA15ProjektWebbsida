@@ -212,3 +212,130 @@ li {
 #kretsschema {
     padding-left: 402px; 
 }
+
+
+
+/*--------------------*/
+/*      ABOUT US      */
+/*--------------------*/
+
+.about_us {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    margin-top: 20px;
+    width: 100%;
+    float: left;
+}
+
+
+.about_us > .c1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /*Places the content inside the flexbox vertically*/
+    box-sizing: border-box;
+
+    float: left;
+    width: 10%;
+
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: bolder;
+    color: black;
+}
+
+.about_us > .c1 > a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: left;
+}
+
+.about_us > .c1 > a > img {
+    height: 50px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+
+.about_us_text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 30px;
+
+    margin-top: 50px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: medium;
+    color: #6D9DC5;
+
+    float: left;
+}
+
+
+
+
+
+/*--------------------*/
+/*   1. MAIN HEADER   */
+/*--------------------*/
+
+.main_header {
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    padding-left: 2%;
+    margin-top: 40px;
+
+    /* border: 5px solid orange; */
+}
+
+.main_header h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 60px;
+    font-weight: lighter;
+    color: white;
+    /*Change margin and padding in order to decrease space between h1 and h2*/
+    margin: 0;
+    padding: 0;
+}
+
+.all_cards {
+    display: flex;
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    float: left;
+    box-sizing: border-box;
+
+    /* border: 5px solid orange; */
+}
+
+.person_card {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box; /*Enables borders to be "inside" the actual frame rather than adding them on the outside and thus not affecting the size*/
+    float: left;
+    width: 21%;
+    margin: 2%;
+    height: 200px;
+    border-radius: 25px;
+    justify-content: center;
+    align-items: center;
+    border: solid 5px #6D9DC5;
+}
+
+.person_card > p {
+    color: white;
+
+}
+
+.person_card > h1 {
+    color: white;
+}
