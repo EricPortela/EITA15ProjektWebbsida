@@ -307,12 +307,12 @@ li {
 
 .all_cards {
     display: flex;
-    height: 400px;
     justify-content: center;
     align-items: center;
     width: 100%;
     float: left;
     box-sizing: border-box;
+    flex-wrap: wrap;
 
     /* border: 5px solid orange; */
 }
@@ -338,4 +338,59 @@ li {
 
 .person_card > h1 {
     color: white;
+}
+
+
+
+
+
+/*--------------------*/
+/*    1. About US     */
+/*--------------------*/
+
+.about_us_top {
+    display: flex;
+    box-sizing: border-box;
+    padding: 50px;
+
+}
+
+#about_us_top_left {
+    width: 50%;
+    float: right;
+}
+
+#about_us_top_right {
+    width: 50%;
+    float: left;
+}
+
+
+
+
+#image_holder  {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    float: right;
+    border-radius: 50%;
+    background-color: #6D9DC5;
+    width: 500px;
+    height: 500px;
+}
+
+#about_us_text {
+    display: flex;
+    flex-direction: column;
+    float: left;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: lighter;
+    
+    color: white;
+}
+
+
+#about_us_img {
+    width: 500px;    
 }
