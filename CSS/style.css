@@ -134,15 +134,14 @@ body {
 
 .pop_over_menu {
     height: 100%;
-  width: 0;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: rgb(0,0,0);
-  background-color: rgba(0,0,0, 0.9);
-  overflow-x: hidden;
-  transition: 0.5s;
+    width: 0;
+    position: fixed;
+    z-index: 1; /* Sets the pop_over_menu over the main page */
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    transition: 0.5s;
 }
 
 .menu_list {
