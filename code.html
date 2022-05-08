@@ -4,11 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-AU-compatible" content="ie=edge">
     
-    <title>Om oss</title>
+    <title>Källkod</title>
     <link rel="stylesheet" href="../CSS/style.css">
     <script src="script.js"></script>
+    <link rel="stylesheet"
+    href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/styles/stackoverflow-dark.min.css">
+
 </head>
 <body>
+
 
     <!-- Main Page -->
     <div class="main_view">
@@ -30,64 +34,37 @@
 
         </div>
 
-
         <div class="container_div">
 
-            <div class="text_div">
-                <div class="main_header">
-                   
-                </div>
-            </div>
+            <pre class="code_pretext">
+                <code>
+                    <!-- ADD C CODE IN HERE -->
+                    <!-- <p>: &ltp;&gt; -->
+                    <!-- >: &lt/p&gt; -->
+                    #include &ltstdlib;&gt;
+                    #include &ltstdlib;&gt;
+                        
+                    int main()  
+                    {  
+                        int i;    
+                        /* It returns the same sequence of random number  
+                        on every execution of the program. */  
+                        printf(" Random Numbers are: \n");   
+                        for (i = 0; i <5; i++)  
+                        {  
+                            printf(" %d", rand());  
+                        }   
+                            
+                        return 0;  
+                    }  
+                </code>
+            </pre>
             
-
-            <div class="about_us_top">
-
-                <div id="about_us_top_left">
-                    <div id="about_us_text">
-                        <h1>OM OSS</h1>
-                        <a>Ett projektarbete i kursen Digitala System (EITA15) av grupp 5 gjort HT21. </a>
-                    </div>
-                </div>
-
-                <div id="about_us_top_right">
-                    <div id="image_holder">
-                        <img id="about_us_img" src="../Assets/about_us.svg">
-                    </div>
-                </div> 
-
-            </div>
-
-
-            <div class="about_us_cards">
-                <div class="person_card">
-                    <h1> Hassan Hussin </h1>
-                    <p>Something</p>
-                </div>
-    
-                <div class="person_card">
-                    <h1> Max Persson </h1>
-                    <p>Something</p>
-                </div>
-    
-                <div class="person_card">
-                    <h1> Edgar Portela </h1>
-                    <p>Something</p>
-                </div>
-    
-                <div class="person_card">
-                    <h1> Eric Portela </h1>
-                    <p>Something</p>
-                </div>
-
-            </div>
-
-
             <div class="about_us_text">
                 ETT PROJEKTARBETE I DIGITALA SYSTEM AV ELEVER PÅ LTH
             </div>
             
             <div class="about_us">
-
                 <div class="c1">
                     <a href="https://www.lth.se" target="_blank">
                         <img src="../Assets/lth_logo.svg">
@@ -101,10 +78,12 @@
                     </a>
                     <!-- Check out our github repo! -->
                 </div>
-                
             </div>
     
         </div>
+
+    </div>
+
 
     <!-- Pop-over Menu -->
     <div id="pop_over" class="pop_over_menu">
@@ -124,6 +103,20 @@
         </ul>
 
     </div>
+     
+    <!-- Javascript for opening and closing of pop-up menu! -->
+    <script>
+        function openMenu() {
+            document.getElementById("pop_over").style.width = "100%";
+        } 
+
+        function closeMenu() {
+            document.getElementById("pop_over").style.width = "0%";
+        } 
+    </script>
+
     
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
 </body>
 </html>

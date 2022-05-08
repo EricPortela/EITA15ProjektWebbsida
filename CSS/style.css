@@ -42,6 +42,10 @@
     width: 50%;
 }
 
+.logo:link {
+    text-decoration: none;
+}
+
 #menu {
     max-height: 20px;
     padding: 20px;
