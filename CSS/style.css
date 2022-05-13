@@ -168,8 +168,8 @@ body {
     transition: 0.5s;
 }
 
-#home_icon {
-    width: 30px;
+.home_icon {
+    width: 10px;
 }
 
 .menu_list {
