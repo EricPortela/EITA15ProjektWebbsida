@@ -4,6 +4,7 @@ Webbsida för projektarbete i kursen Digitala System (EITA15). Pågående kurs. 
 # Design
 <p align="center">
      <p> Mockups gjorda i Sketch. Preliminära utkast. Kan komma att ändras/se annorlunda ut för slutgiltig version. </p>
+     <p> Källkod-, kretscchema- och demo-flik lades även till. </p>
      <h3> - Huvudsida </h3>
      <img src="https://user-images.githubusercontent.com/58792679/163952231-49f60f01-e4af-4aee-acaa-732e12f647e2.png" width="800">
      <br>
