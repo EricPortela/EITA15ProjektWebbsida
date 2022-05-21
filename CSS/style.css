@@ -408,4 +408,28 @@ li {
 .person_card > h1 {
     color: white;
 }
+
 /* ------------------------------------------------------------------------------------------------ */
+
+
+.content_view {
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.content_view {
+    height: 60vh;
+}
+
+.report_link {
+    color: white;
+}
+
+.video_demo {
+    width: 80%;
+    height: 500px;
+}

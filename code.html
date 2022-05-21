@@ -37,25 +37,148 @@
 
             <pre class="code_pretext">
                 <code>
-                    <!-- ADD C CODE IN HERE -->
-                    <!-- <p>: &ltp;&gt; -->
-                    <!-- >: &lt/p&gt; -->
-                    #include &ltstdlib;&gt;
-                    #include &ltstdlib;&gt;
+                    /*
+                    * Projekt_rok_detektor.c
+                    *
+                    * Created: 2022-04-14 10:44:55
+                    * Author : ma7646pe-s
+                    */ 
+                    
+                    #define F_CPU 16000000UL
+                    #define DATA PORTD
+                    #define ctrl PORTC
+                    #define en PORTC1
+                    #define rs PORTC6
+                    #define rw PORTC7
+                    #define res PINA4
+                    #include <util/delay.h>
+                    #include <avr/io.h>
+                    #include <avr/interrupt.h>
+                    #include <avr/wdt.h>
+                    
+                    uint16_t ref = 0;
+                    uint8_t read_value = 0;
+                    
+                    
+                    void reset(){
+                        wdt_enable(WDTO_250MS);
+                    }
+                    
+                    void buzzer(){
+                        DDRA |= 0b00000010;
+                        PORTA |= 0b00000010;
+                    }
+                    
+                    void lights(){
+                        DDRA |= 0b00001100;
+                        PORTA |= 0b00001100;
+                    }
+                    
+                    void adc_init(){
+                        DDRA = 0b11111110 & DDRA; //Set pin ADC0 as input pin
+                        PORTA |= 0x01; // Activate pull-up resistor to avoid floating value
+                        ADMUX |= 0b10100000;    //[7,6] reference voltage AVcc, [2.5V] ADC left adjusted,[4,0] Select ADC0 single ended input
+                        ADCSRA |= 0b10000111;  // [7] Enable ADC, [2,0] ADC prescaler division factor = 128
                         
-                    int main()  
-                    {  
-                        int i;    
-                        /* It returns the same sequence of random number  
-                        on every execution of the program. */  
-                        printf(" Random Numbers are: \n");   
-                        for (i = 0; i <5; i++)  
-                        {  
-                            printf(" %d", rand());  
-                        }   
-                            
-                        return 0;  
-                    }  
+                    }
+                    
+                    uint16_t adc_read(){
+                        
+                        ADCSRA |= 0b01000000;
+                        while((ADCSRA >> 6) == 0b00000011){
+                                }   
+                        read_value = ADCH;
+                        return read_value;
+                    }
+                    
+                    void ref_value(){   
+                        _delay_ms(5000);
+                        
+                        for(int i = 0; i < 5; i++){
+                            ref = ref + adc_read();
+                            _delay_ms(1000);
+                        }
+                        ref = ref / 5;
+                        ref = ref * 1.02;
+                    }
+                    
+                    void LCD_cmd(unsigned char cmd){
+                        DATA = cmd;
+                        ctrl = (0 << rs)|(0 << rw)|(1 << en);
+                        _delay_ms(1);
+                        ctrl = (0 << rs)|(0 << rw)|(0 << en);
+                        _delay_ms(50);
+                        return;
+                    }
+                    
+                    void LCD_init(void){
+                        
+                        DDRC |= 0b11000110;
+                        DDRD = 0xff;
+                        
+                        LCD_cmd(0x38); //Function set
+                        _delay_ms(1);
+                        
+                        LCD_cmd(0x01);  //Clear display
+                        _delay_ms(1);
+                        
+                        LCD_cmd(0x0f); //Display on
+                        _delay_ms(1);
+                        
+                        LCD_cmd(0x02); //Entry mode
+                    }
+                    
+                    void LCD_write(unsigned char chr){
+                        DATA = chr;
+                        ctrl = (1 << rs)|(0 << rw)|(1 << en);
+                        _delay_ms(1);                                                                                                                                          
+                        ctrl = (0 << rs)|(0 << rw)|(0 << en);
+                        _delay_ms(50);
+                        return;
+                    }
+                    
+                    void LCD_string(const char *str){
+                        int i = 0;
+                        while(str[i]!='\0'){
+                            LCD_write(str[i]);
+                            i++;        
+                        }
+                        return;
+                    }
+                    
+                    void is_it_burning_questionmark(){
+                        if(adc_read() > ref){
+                            LCD_cmd(0x01);
+                            _delay_ms(1);
+                            LCD_string("* Warning Fire *");
+                            buzzer();
+                            lights();
+                            while(1){   
+                                if(PINA >> res == 0x01){
+                                    PORTA = PORTA & 0b00000001;
+                                    reset();
+                                }   
+                            }
+                        }
+                    }
+                    
+                    
+                    int main(void)
+                    {   
+                        MCUSR = 0;
+                        wdt_disable();
+                        cli();
+                        LCD_init();
+                        LCD_string("*** No Fire! *** test");
+                        
+                        
+                        adc_init();
+                        ref_value();
+                    
+                        while (1) { 
+                            is_it_burning_questionmark();
+                        }
+                    }
                 </code>
             </pre>
             
@@ -105,5 +228,6 @@
     
     <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/highlight.min.js"></script>
     <script>hljs.highlightAll();</script>
+
 </body>
 </html>
