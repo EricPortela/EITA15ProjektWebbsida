@@ -412,6 +412,20 @@ li {
 /* ------------------------------------------------------------------------------------------------ */
 
 
+.middle {
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
+}
+
+#kretsschema {
+    border: 0px;
+    margin: 0px;
+    width: 50%;
+}
+
+
+
 .content_view {
     display: flex;
     box-sizing: border-box;
